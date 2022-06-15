@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/spinner_heigth"
+        android:layout_marginTop="@dimen/spinner_mergin_top"
+        app:cardBackgroundColor="@color/color_semi_transperant"
+        app:cardCornerRadius="0dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:gravity="center_vertical"
+                android:layout_marginStart="@dimen/fab_margin"
+                android:text=" معلومات التواصل :"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:textColor="@color/black_color"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/fab_margin"
+        android:layout_marginTop="@dimen/fab_margin"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView"
+        app:srcCompat="@drawable/ic_email_black_24dp" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/fab_margin"
+        app:layout_constraintStart_toStartOf="@+id/imageView4"
+        app:layout_constraintTop_toBottomOf="@+id/imageView4"
+        app:srcCompat="@drawable/ic_phone_black_24dp" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/fab_margin"
+        app:layout_constraintStart_toStartOf="@+id/imageView5"
+        app:layout_constraintTop_toBottomOf="@+id/imageView5"
+        app:srcCompat="@drawable/ic_phone_iphone_black_24dp" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/mergin_start"
+        android:text="xxxxxxxx@gmail.com"
+        android:textColor="@color/black_color"
+        app:layout_constraintStart_toEndOf="@+id/imageView4"
+        app:layout_constraintTop_toTopOf="@+id/imageView4" />
+
+    <TextView
+        android:id="@+id/tv_tel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0000000000"
+        android:textColor="@color/black_color"
+        app:layout_constraintStart_toStartOf="@+id/textView4"
+        app:layout_constraintTop_toTopOf="@+id/imageView5" />
+
+    <TextView
+        android:id="@+id/tv_phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0000000000"
+        android:textColor="@color/black_color"
+        app:layout_constraintStart_toStartOf="@+id/tv_tel"
+        app:layout_constraintTop_toTopOf="@+id/imageView6" />
+
+    <ImageView
+        android:id="@+id/im_facebook"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginEnd="@dimen/mergin_start"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_phone"
+        app:layout_constraintEnd_toStartOf="@+id/im_instagram"
+        app:srcCompat="@drawable/facebook" />
+
+    <ImageView
+        android:id="@+id/im_twitter"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginEnd="@dimen/spinner_mergin_top"
+        app:layout_constraintBottom_toBottomOf="@+id/im_instagram"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/twitter" />
+
+    <ImageView
+        android:id="@+id/im_instagram"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginEnd="@dimen/mergin_start"
+        app:layout_constraintBottom_toBottomOf="@+id/im_facebook"
+        app:layout_constraintEnd_toStartOf="@+id/im_twitter"
+        app:srcCompat="@drawable/instgram" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView1"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/spinner_heigth"
+        android:layout_marginTop="40dp"
+        app:cardBackgroundColor="@color/color_semi_transperant"
+        app:cardCornerRadius="0dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_phone">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:gravity="center_vertical"
+                android:layout_marginStart="@dimen/fab_margin"
+                android:text="للتواصل :"
+                android:textColor="@color/black_color"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+    <EditText
+        android:id="@+id/ed_contact_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/fab_margin"
+        android:layout_marginStart="@dimen/fab_margin"
+        android:layout_marginEnd="@dimen/fab_margin"
+        android:ems="10"
+        android:hint="الاسم"
+        android:paddingStart="@dimen/padding_start"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView1" />
+
+    <EditText
+        android:id="@+id/ed_contact_email"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        android:hint="الايميل"
+        android:paddingStart="@dimen/padding_start"
+        app:layout_constraintEnd_toEndOf="@+id/ed_contact_name"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/ed_contact_name"
+        app:layout_constraintTop_toBottomOf="@+id/ed_contact_name" />
+
+    <EditText
+        android:id="@+id/ec_contact_mobile"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:ems="10"
+        android:inputType="text|number"
+        android:hint="موبايل"
+        android:paddingStart="@dimen/padding_start"
+        app:layout_constraintEnd_toEndOf="@+id/ed_contact_email"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/ed_contact_email"
+        app:layout_constraintTop_toBottomOf="@+id/ed_contact_email" />
+
+    <EditText
+        android:id="@+id/ed_contact_message"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="الرسالة"
+        android:paddingStart="@dimen/padding_start"
+        app:layout_constraintEnd_toEndOf="@+id/ec_contact_mobile"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/ec_contact_mobile"
+        app:layout_constraintTop_toBottomOf="@+id/ec_contact_mobile" />
+
+        <Button
+            android:id="@+id/btn_contact"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spinner_mergin_top"
+            android:layout_marginBottom="@dimen/mergin_bottom"
+            android:background="@color/text_color"
+            android:text="إرسال"
+            android:textColor="@color/white_color"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/ed_contact_message"
+            app:layout_constraintStart_toStartOf="@+id/ed_contact_message"
+            app:layout_constraintTop_toBottomOf="@+id/ed_contact_message" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

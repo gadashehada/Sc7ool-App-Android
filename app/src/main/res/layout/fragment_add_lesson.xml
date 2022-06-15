@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/im_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/subtraction_blue" />
+
+        <TextView
+            android:id="@+id/tv_app_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/project_name"
+            android:textColor="@color/text_color"
+            android:textSize="@dimen/font_size_sub"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/im_name"
+            app:layout_constraintStart_toStartOf="@+id/im_name"
+            app:layout_constraintTop_toBottomOf="@+id/im_name" />
+
+        <Spinner
+            android:id="@+id/spinner_grade"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/spinner_heigth"
+            android:layout_marginStart="@dimen/fab_margin"
+            android:layout_marginTop="@dimen/spinner_mergin_top"
+            android:layout_marginEnd="@dimen/fab_margin"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_app_name" />
+
+
+        <Spinner
+            android:id="@+id/spinner_subjects"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/spinner_heigth"
+            app:layout_constraintEnd_toEndOf="@id/spinner_grade"
+            android:layout_marginTop="@dimen/fab_margin"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@id/spinner_grade"
+            app:layout_constraintTop_toBottomOf="@+id/spinner_grade" />
+
+        <EditText
+            android:id="@+id/ed_lesson_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/fab_margin"
+            android:ems="10"
+            android:hint="عنوان الدرس"
+            android:paddingStart="@dimen/padding_start"
+            android:inputType="textPersonName"
+            app:layout_constraintEnd_toEndOf="@+id/spinner_subjects"
+            app:layout_constraintStart_toStartOf="@+id/spinner_subjects"
+            app:layout_constraintTop_toBottomOf="@+id/spinner_subjects" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:text="اختر صورة"
+            android:textColor="#000"
+            app:layout_constraintStart_toStartOf="@+id/ed_lesson_title"
+            app:layout_constraintTop_toBottomOf="@+id/ed_lesson_title" />
+
+        <ImageView
+            android:id="@+id/im_choose_lessons"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="@+id/ed_lesson_title"
+            app:layout_constraintTop_toTopOf="@+id/textView3"
+            app:srcCompat="@drawable/ic_menu_camera" />
+
+        <EditText
+            android:id="@+id/ed_message_lessons"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/fab_margin"
+            android:ems="10"
+            android:hint="وصف الدرس"
+            android:inputType="textPersonName"
+            android:paddingStart="@dimen/padding_start"
+            app:layout_constraintEnd_toEndOf="@+id/im_choose_lessons"
+            app:layout_constraintStart_toStartOf="@+id/textView3"
+            app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+        <Spinner
+            android:id="@+id/spinner_kind_lessons"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/spinner_heigth"
+            android:layout_marginTop="@dimen/spinner_mergin_top"
+            app:layout_constraintEnd_toEndOf="@id/ed_message_lessons"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@id/ed_message_lessons"
+            app:layout_constraintTop_toBottomOf="@+id/ed_message_lessons" />
+
+        <Button
+            android:id="@+id/btn_add_lessons"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spinner_mergin_top"
+            android:text="اضافة درس"
+            android:layout_marginBottom="@dimen/mergin_bottom"
+            android:textColor="@color/white_color"
+            android:background="@color/text_color"
+            app:layout_constraintEnd_toEndOf="@+id/spinner_kind_lessons"
+            app:layout_constraintStart_toStartOf="@+id/spinner_kind_lessons"
+            app:layout_constraintTop_toBottomOf="@+id/spinner_kind_lessons"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.Lesson_Details.LessonDetailsActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/tv_lesson_details_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/fab_margin"
+        android:layout_marginTop="@dimen/spinner_mergin_top"
+        android:layout_marginEnd="@dimen/fab_margin"
+        android:text="First lesson : indroduction to indrouduction indroduction"
+        android:textColor="@color/black_color"
+        android:textSize="@dimen/font_size_sub"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rc_lesson_image"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="@dimen/fab_margin"
+            android:layout_marginBottom="@dimen/mergin_end"
+            app:layout_constraintBottom_toTopOf="@+id/guideline2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/tv_lesson_details_title"
+            app:layout_constraintTop_toBottomOf="@+id/tv_lesson_details_title"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintGuide_begin="372dp"
+            app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_invite_friend"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/mergin_end"
+        android:text="وصف الدرس"
+        android:textColor="@color/text_color"
+        android:textSize="@dimen/font_size_sub"
+        app:layout_constraintEnd_toEndOf="@+id/tv_lesson_details_title"
+        app:layout_constraintStart_toStartOf="@+id/tv_lesson_details_title"
+        app:layout_constraintTop_toTopOf="@+id/guideline2" />
+
+    <TextView
+        android:id="@+id/tv_invite_friend_par"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/mergin_start"
+        android:text="First lesson : indroduction to indrouduction indroduction First lesson : indroduction to indrouduction indroduct First lesson : indroduction to indrouduction indroduct"
+        android:textColor="@color/black_color"
+        android:textSize="@dimen/font_size_sub"
+        app:layout_constraintEnd_toEndOf="@id/tv_invite_friend"
+        app:layout_constraintStart_toStartOf="@id/tv_invite_friend"
+        app:layout_constraintTop_toBottomOf="@id/tv_invite_friend" />
+
+    <TextView
+        android:id="@+id/tv_comments"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/spinner_mergin_top"
+        android:text="التعليقات"
+        android:textColor="@color/text_color"
+        android:textSize="@dimen/font_size_sub"
+        app:layout_constraintEnd_toEndOf="@+id/tv_invite_friend_par"
+        app:layout_constraintStart_toStartOf="@+id/tv_invite_friend_par"
+        app:layout_constraintTop_toBottomOf="@+id/tv_invite_friend_par" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rc_user_comments"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/mergin_start"
+        android:layout_marginBottom="@dimen/mergin_start"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/tv_comments"
+        app:layout_constraintStart_toStartOf="@+id/tv_comments"
+        app:layout_constraintTop_toBottomOf="@+id/ed_comment"/>
+
+    <EditText
+        android:id="@+id/ed_comment"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/mergin_start"
+        android:ems="10"
+        android:hint="إضافة تعليق"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toStartOf="@+id/im_send_comments"
+        app:layout_constraintStart_toStartOf="@+id/tv_comments"
+        app:layout_constraintTop_toBottomOf="@+id/tv_comments" />
+
+    <TextView
+        android:id="@+id/im_send_comments"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:text="إرسال"
+        android:textColor="@color/text_color"
+        app:layout_constraintBottom_toBottomOf="@+id/ed_comment"
+        app:layout_constraintEnd_toEndOf="@+id/tv_comments"
+        app:layout_constraintTop_toTopOf="@+id/ed_comment" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

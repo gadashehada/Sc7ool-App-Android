@@ -1,0 +1,19 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="nav_header_vertical_spacing">8dp</dimen>
+    <dimen name="nav_header_height">176dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+
+    <dimen name="spinner_mergin_top">24dp</dimen>
+    <dimen name="padding_start">8dp</dimen>
+    <dimen name="mergin_start">8dp</dimen>
+    <dimen name="mergin_end">8dp</dimen>
+    <dimen name="mergin_bottom">24dp</dimen>
+    <dimen name="font_size">20sp</dimen>
+    <dimen name="font_size_sub">16sp</dimen>
+    <dimen name="spinner_heigth">40dp</dimen>
+
+    <dimen name="raduis">20dp</dimen>
+</resources>

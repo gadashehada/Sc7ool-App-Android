@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.News_Details.NewsDetailsActivity">
+
+    <TextView
+        android:id="@+id/tv_news_details_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/fab_margin"
+        android:layout_marginTop="@dimen/spinner_mergin_top"
+        android:layout_marginEnd="@dimen/fab_margin"
+        android:textStyle="bold"
+        android:text="First lesson : indroduction to indrouduction indroduction"
+        android:textColor="@color/black_color"
+        android:textSize="@dimen/font_size_sub"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+    <TextView
+        android:id="@+id/tv_description_nes_details"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/fab_margin"
+        android:text="First lesson : indroduction to indrouduction indroduction First lesson : indroduction to indrouduction indroduct First lesson : indroduction to indrouduction indroduct"
+        android:textColor="@color/black_color"
+        android:textSize="@dimen/font_size_sub"
+        app:layout_constraintEnd_toEndOf="@id/im_news_details"
+        app:layout_constraintStart_toStartOf="@id/im_news_details"
+        app:layout_constraintTop_toBottomOf="@id/guideline2" />
+
+    <TextView
+        android:id="@+id/tv_no_image"
+        android:background="@color/black_color"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:textColor="@color/gray_color"
+        android:visibility="invisible"
+        android:text="no image"
+        android:layout_marginTop="@dimen/fab_margin"
+        android:layout_marginBottom="@dimen/mergin_end"
+        app:layout_constraintBottom_toTopOf="@+id/guideline2"
+        app:layout_constraintEnd_toEndOf="@id/tv_news_details_title"
+        android:scaleType="fitXY"
+        app:layout_constraintStart_toStartOf="@+id/tv_news_details_title"
+        app:layout_constraintTop_toBottomOf="@+id/tv_news_details_title"/>
+
+    <ImageView
+        android:id="@+id/im_news_details"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:srcCompat="@drawable/about_school_image"
+        android:layout_marginTop="@dimen/fab_margin"
+        android:layout_marginBottom="@dimen/mergin_end"
+        app:layout_constraintBottom_toTopOf="@+id/guideline2"
+        app:layout_constraintEnd_toEndOf="@id/tv_news_details_title"
+        android:scaleType="fitXY"
+        app:layout_constraintStart_toStartOf="@+id/tv_news_details_title"
+        app:layout_constraintTop_toBottomOf="@+id/tv_news_details_title" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>

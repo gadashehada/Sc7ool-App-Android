@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="8dp"
+    android:layout_marginEnd="8dp"
+    android:layout_marginBottom="8dp"
+    android:layout_marginTop="8dp">
+
+    <FrameLayout
+        android:id="@+id/framelayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ProgressBar
+            android:layout_gravity="center"
+            android:id="@+id/progressBar"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="100dp"
+            android:layout_height="100dp" />
+
+        <TextView
+            android:id="@+id/tv_no_image"
+            android:background="@color/black_color"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textColor="@color/gray_color"
+            android:visibility="invisible"
+            android:text="no image"/>
+
+        <ImageView
+            android:id="@+id/im_home_news"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            app:srcCompat="@drawable/home_image" />
+
+    </FrameLayout>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="@dimen/spinner_mergin_top"
+            app:cardBackgroundColor="@color/home_color_semi_transperant"
+            app:cardCornerRadius="0dp"
+            app:layout_constraintEnd_toEndOf="@id/framelayout"
+            app:layout_constraintStart_toStartOf="@id/framelayout"
+            app:layout_constraintBottom_toBottomOf="@id/framelayout">
+
+            <TextView
+                android:id="@+id/tv_news_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="@dimen/fab_margin"
+                android:text="contact info contact contact contact contct"
+                android:textColor="@color/white_color" />
+        </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

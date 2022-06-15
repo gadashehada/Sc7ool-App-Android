@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.addNew.AddNewFragment">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/im_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/subtraction_blue" />
+
+        <TextView
+            android:id="@+id/tv_app_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/project_name"
+            android:textColor="@color/text_color"
+            android:textSize="@dimen/font_size_sub"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/im_name"
+            app:layout_constraintStart_toStartOf="@+id/im_name"
+            app:layout_constraintTop_toBottomOf="@+id/im_name" />
+
+        <EditText
+            android:id="@+id/ed_news_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="عنوان الخبر"
+            android:paddingStart="@dimen/padding_start"
+            android:layout_marginStart="@dimen/fab_margin"
+            android:layout_marginEnd="@dimen/fab_margin"
+            android:layout_marginTop="@dimen/spinner_mergin_top"
+            android:inputType="textPersonName"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_app_name" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:text="اختر صورة"
+            android:textColor="#000"
+            app:layout_constraintStart_toStartOf="@+id/ed_news_title"
+            app:layout_constraintTop_toBottomOf="@+id/ed_news_title" />
+
+        <ImageView
+            android:id="@+id/im_choose_image_news"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="@+id/ed_news_title"
+            app:layout_constraintTop_toTopOf="@+id/textView3"
+            app:srcCompat="@drawable/ic_menu_camera" />
+
+        <EditText
+            android:id="@+id/ed_news_description"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/fab_margin"
+            android:ems="10"
+            android:hint="وصف الخبر"
+            android:inputType="textPersonName"
+            android:paddingStart="@dimen/padding_start"
+            app:layout_constraintEnd_toEndOf="@+id/im_choose_image_news"
+            app:layout_constraintStart_toStartOf="@+id/textView3"
+            app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+        <Button
+            android:id="@+id/btn_add_news"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spinner_mergin_top"
+            android:text="اضافة الخبر"
+            android:textColor="@color/white_color"
+            android:background="@color/text_color"
+            app:layout_constraintEnd_toEndOf="@+id/ed_news_description"
+            app:layout_constraintStart_toStartOf="@+id/ed_news_description"
+            app:layout_constraintTop_toBottomOf="@+id/ed_news_description" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

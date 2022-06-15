@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#0099ff</color>
+    <color name="colorPrimaryDark">#0072ff</color>
+    <color name="colorAccent">#00abff</color>
+
+    <color name="searchbox">#DCDCDC	</color>
+    <color name="splash_color">#0099ff</color>
+    <color name="white_color">#ffffff</color>
+    <color name="black_color">#000000</color>
+    <color name="gray_color">#808080</color>
+    <color name="text_color">#0099ff</color>
+    <color name="color_semi_transperant">#100099ff</color>
+    <color name="home_color_semi_transperant">#70000000</color>
+</resources>

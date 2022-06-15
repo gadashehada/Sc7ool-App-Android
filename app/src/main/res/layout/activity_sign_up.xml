@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.signup.SignUpActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="37dp">
+
+        <ImageView
+            android:id="@+id/im_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/subtraction_blue" />
+
+        <TextView
+            android:id="@+id/tv_app_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/project_name"
+            android:textColor="@color/text_color"
+            android:textSize="@dimen/font_size_sub"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/im_name"
+            app:layout_constraintStart_toStartOf="@+id/im_name"
+            app:layout_constraintTop_toBottomOf="@+id/im_name" />
+
+        <EditText
+            android:id="@+id/ed_register_firstName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="40dp"
+            android:ems="10"
+            android:layout_marginEnd="@dimen/fab_margin"
+            android:hint="الاسم"
+            android:inputType="textPersonName"
+            android:paddingStart="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_app_name" />
+
+
+        <EditText
+            android:id="@+id/ed_register_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:ems="10"
+            android:hint="الايميل"
+            android:inputType="textEmailAddress"
+            android:paddingStart="10dp"
+            app:layout_constraintEnd_toEndOf="@+id/ed_register_firstName"
+            app:layout_constraintStart_toStartOf="@+id/ed_register_firstName"
+            app:layout_constraintTop_toBottomOf="@+id/ed_register_firstName" />
+
+        <EditText
+            android:id="@+id/ed_register_email"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:ems="10"
+            android:hint="الموبايل"
+            android:inputType="number"
+            android:paddingStart="10dp"
+            app:layout_constraintEnd_toEndOf="@+id/ed_register_name"
+            app:layout_constraintStart_toStartOf="@+id/ed_register_name"
+            app:layout_constraintTop_toBottomOf="@+id/ed_register_name" />
+
+        <EditText
+            android:id="@+id/ed_register_password"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:ems="10"
+            android:hint="كلمة المرور"
+            android:inputType="textPassword"
+            android:paddingStart="10dp"
+            app:layout_constraintEnd_toEndOf="@+id/ed_register_email"
+            app:layout_constraintStart_toStartOf="@+id/ed_register_email"
+            app:layout_constraintTop_toBottomOf="@+id/ed_register_email" />
+
+        <EditText
+            android:id="@+id/ed_register_confirm_password"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:ems="10"
+            android:hint="تأكيد كلمة المرور"
+            android:inputType="textPassword"
+            android:paddingStart="10dp"
+            app:layout_constraintEnd_toEndOf="@+id/ed_register_password"
+            app:layout_constraintStart_toStartOf="@+id/ed_register_password"
+            app:layout_constraintTop_toBottomOf="@+id/ed_register_password" />
+
+        <Button
+            android:id="@+id/btn_register"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="@color/colorAccent"
+            android:text="إنشاء حساب"
+            android:textColor="#fff"
+            app:layout_constraintEnd_toEndOf="@+id/ed_register_confirm_password"
+            app:layout_constraintStart_toStartOf="@+id/ed_register_confirm_password"
+            app:layout_constraintTop_toBottomOf="@+id/ed_register_confirm_password" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="60dp"
+            android:text="تمتلك حسابا ؟!"
+            android:textColor="#000"
+            android:textSize="16dp"
+            app:layout_constraintEnd_toEndOf="@+id/btn_register"
+            app:layout_constraintStart_toStartOf="@+id/btn_register"
+            app:layout_constraintTop_toBottomOf="@+id/btn_register" />
+
+        <TextView
+            android:id="@+id/tv_register_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Login"
+            android:textColor="@color/colorAccent"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:layout_marginBottom="@dimen/fab_margin"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/textView"
+            app:layout_constraintStart_toStartOf="@+id/textView"
+            app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
